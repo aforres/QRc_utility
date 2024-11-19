@@ -1,12 +1,12 @@
 # PC_QRc_utility.py 20230829 aforres
 import streamlit as st
-import qrtools
+import qrtools as qr
 import numpy as np
 
 def QRcode_generator(example_data, output_filename):
 
     # instantiate QRCode object
-    qr = qrcode.QRCode(version=1, box_size=10, border=4)
+    qr = qrtools.QRCode(version=1, box_size=10, border=4)
     # add data to the QR code
     qr.add_data(example_data)
     # compile the data into a QR code array
