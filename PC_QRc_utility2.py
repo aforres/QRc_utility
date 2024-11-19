@@ -1,6 +1,6 @@
 # PC_QRc_utility.py 20230829 aforres
 import streamlit as st
-import qrcode
+import qrtools
 import numpy as np
 
 def QRcode_generator(example_data, output_filename):
